@@ -232,7 +232,7 @@ const path      = require( "path" );
                 options.checkoutdated.ignore.packages = arg;
           expect(() => { chkoutdt.toArgs( env.grunt, env.task, options )
                               .then(( value ) => {
-                                      console.log( value );
+                                      // console.log( value );
                                       expect( value ).to.be.an( "object" );
                                       expect( value.opts.checkoutdated.ignore.packages === arg ).to.be.ok();
                                       expect( value.args.includes( pkg )).to.be.ok();
