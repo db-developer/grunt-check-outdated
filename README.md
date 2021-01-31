@@ -37,11 +37,11 @@ The plugin can be installed by the following command:
 
 Once installed, the plugin may be loaded from within your gruntfile:
 
-<code>grunt.loadNpmTasks( "npm-outdateds" );</code>
+<code>grunt.loadNpmTasks( "grunt-check-outdated" );</code>
 
 Setup the task configuration as described below (see usage) and run the task:
 
-<code>grunt npm-outdated</code>
+<code>grunt check_outdated</code>
 
 Of cause, the task can be integrated into any complex build process.
 
