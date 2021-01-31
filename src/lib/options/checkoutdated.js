@@ -192,9 +192,10 @@ function toArgs( grunt, task, options ) {
                 args.push( _STRINGS.OPTIONS_IGNORE_DEV_DEPENDENCIES );
            }
            if (( options.checkoutdated.ignore.packages ) &&
-               ( Array.isArray( options.checkoutdated.ignore.packages ))) {
-                 const s = options.checkoutdated.ignore.packages.join( "," );
-                 args.push( _STRINGS.OPTIONS_IGNORE_PACKAGES, s );
+               (( Array.isArray( options.checkoutdated.ignore.packages ) &&
+                ( options.checkoutdated.ignore.packages.length > 0 )))) {
+                  const s = options.checkoutdated.ignore.packages.join( "," );
+                  args.push( _STRINGS.OPTIONS_IGNORE_PACKAGES, s );
            }
       }
 

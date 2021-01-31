@@ -210,6 +210,21 @@ const path      = require( "path" );
                               .catch(( error ) => { done( error ); })
                        }).not.to.throwException();
       });
+      it( "should be callable with parameters 'grunt' {grunt}, 'task' {task}, 'options' {object} and resolve (options.checkoutdated.ignore.packages = [ ])", ( done ) => {
+          const arg     = [ ];
+          const options = chkoutdt.getTaskOptions( env.task );
+                options.checkoutdated.ignore.packages = arg;
+          expect(() => { chkoutdt.toArgs( env.grunt, env.task, options )
+                                 .then(( value ) => {
+                                         // console.log( value );
+                                         expect( value ).to.be.an( "object" );
+                                         expect( value.opts.checkoutdated.ignore.packages === arg ).to.be.ok();
+                                         expect( value.args.includes( "--ignore-packages" )).not.to.be.ok();
+                                         done();
+                                  })
+                                 .catch(( error ) => { done( error ); })
+                       }).not.to.throwException();
+      });
       it( "should be callable with parameters 'grunt' {grunt}, 'task' {task}, 'options' {object} and resolve (options.checkoutdated.ignore.packages = [ 'some-package' ])", ( done ) => {
           const pkg     = "some-package";
           const arg     = [ pkg ];
@@ -217,10 +232,11 @@ const path      = require( "path" );
                 options.checkoutdated.ignore.packages = arg;
           expect(() => { chkoutdt.toArgs( env.grunt, env.task, options )
                               .then(( value ) => {
-                                      // console.log( value );
+                                      console.log( value );
                                       expect( value ).to.be.an( "object" );
                                       expect( value.opts.checkoutdated.ignore.packages === arg ).to.be.ok();
                                       expect( value.args.includes( pkg )).to.be.ok();
+                                      expect( value.args.includes( "--ignore-packages" )).to.be.ok();
                                       done();
                                })
                               .catch(( error ) => { done( error ); })
@@ -235,6 +251,7 @@ const path      = require( "path" );
                                       // console.log( value );
                                       expect( value ).to.be.an( "object" );
                                       expect( value.opts.checkoutdated.ignore.packages === arg ).to.be.ok();
+                                      expect( value.args.includes( "--ignore-packages" )).not.to.be.ok();
                                       done();
                                })
                               .catch(( error ) => { done( error ); })
