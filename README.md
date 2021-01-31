@@ -47,10 +47,50 @@ Of cause, the task can be integrated into any complex build process.
 
 ## usage ##
 
-documentation to be completed.
-Currently this plugin supports all commandline options of
-[check-outdated](https://www.npmjs.com/package/check-outdated)
+The following examples assume that the grunt plugin 'load-grunt-config' is used.
+Alternatively, the code can of course be integrated into the 'gruntfile.js' file.  
 
-Use grunt "options" to pass options to
-[check-outdated](https://www.npmjs.com/package/check-outdated).
-Do not use camel case (Don't ask - I simply fricking hate that :-))
+For a better understanding of 'checkoutdated' options, pls. visit
+[check-outdated](https://www.npmjs.com/package/check-outdated)  
+
+Options hidden by a comment show default values.
+
+```javascript
+// file check_outdated.js
+module.exports = function ( grunt, options ) {
+  return {
+    always: {                                   // this is a grunt multitask, so define a target.
+      options: {
+        // cwd:           process.cwd(),        // set a working directory - defaults to process.cwd()
+        // dryrun:        false,                // dry run - do nothing just print out the cmd line
+        // quiet          false,                // ... shut up! (no good idea if task fails)
+        /* node: {                              // node options
+          exec:           {string},             // set your node executable - defaults to: process.execPath
+          opts:           {Array<string>}       // array of node options
+        }, */
+        checkoutdated: {                        // mirrors options of [check-outdated](https://www.npmjs.com/package/check-outdated)
+          ignore: {
+            // prereleases:     false,          // --ignore-pre-releases
+                                                //   Don't recommend to update to the latest version, if it contains a hyphen
+            // devdependencies: false,          // --ignore-dev-dependencies
+                                                //   Do not warn if devDependencies are outdated.
+            packages:           [ "webpack" ]   // --ignore-packages
+          },                                    //   Ignore the listed packages, even if they are outdated.
+          columns:              [               // --columns
+                                  "name" ,      //   Defines which columns should be shown in which order.
+                                  "current",    //   [Available columns](https://www.npmjs.com/package/check-outdated#available-columns)
+                                  "wanted",
+                                  "latest"
+                                ],
+          // opts:              {Array<string>} //  grunt-plugin specific: In case check-outdated is newer than
+                                                //  grunt-check-outdated, you may manually add new options to this
+                                                //  array. The arrays contents are appended to the end of the call,
+                                                //  created by this plugin (which can be verified using --dryrun)
+          // depth:             false,          //  --depth <n> Max depth for checking dependency tree
+          // global:            false           //  --global Check packages in the global install prefix
+        }
+      }
+    }
+  };
+};
+```
