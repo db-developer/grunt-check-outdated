@@ -12,6 +12,11 @@ const path      = require( "path" );
     const chkoutdt = require( "../../lib/options/checkoutdated" );
 
     describe( "Testing exports of module 'options/checkoutdated'", () => {
+      it( "Function 'getCheckOutdatedPath' should exist", () => {
+          expect( chkoutdt.getCheckOutdatedPath ).not.to.be( undefined  );
+          expect( chkoutdt.getCheckOutdatedPath ).not.to.be( null       );
+          expect( chkoutdt.getCheckOutdatedPath ).to.be.a(   "function" );
+      });
       it( "Function 'getOptions' should exist", () => {
           expect( chkoutdt.getOptions     ).not.to.be( undefined  );
           expect( chkoutdt.getOptions     ).not.to.be( null       );
@@ -26,6 +31,15 @@ const path      = require( "path" );
           expect( chkoutdt.toArgs         ).not.to.be( undefined  );
           expect( chkoutdt.toArgs         ).not.to.be( null       );
           expect( chkoutdt.toArgs         ).to.be.a(   "function" );
+      });
+    });
+    describe( "Testing function 'getCheckOutdatedPath' of module 'options/checkoutdated'", () => {
+      it( "should be callable without parameters", () => {
+          expect(() => { chkoutdt.getCheckOutdatedPath(); }).not.to.throwException();
+      });
+      it( "should return a path {string}", () => {
+          const value = chkoutdt.getCheckOutdatedPath();
+          expect( value ).to.be.a( "string" );
       });
     });
     describe( "Testing function 'getOptions' of module 'options/checkoutdated'", () => {

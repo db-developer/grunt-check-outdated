@@ -13,15 +13,6 @@
 "use strict";
 
 /**
- *  Module initializer
- *  @ignore
- */
-const _m = {
-  path:     require( "path"   ),
-  lib:      require( "../lib" )
-};
-
-/**
  *  Stringtable initializer
  *  @ignore
  */
@@ -38,8 +29,9 @@ function _init_STRINGS() {
     ERROR_MSG_MISSING_OPTIONS:        `${ errormsg } 'options'.`,
     ERROR_MSG_MISSING_TASK:           `${ errormsg } 'task'.`,
     FALSE:                            `${ false }`,
-    GETCHKOUTDATEDOPTIONS:            "getChkOutdatedOptions",
     GETCHKOUTDATEDIGNOREOPTIONS:      "getChkOutdatedIgnoreOptions",
+    GETCHKOUTDATEDOPTIONS:            "getChkOutdatedOptions",
+    GETCHECKOUTDATEDPATH:             "getCheckOutdatedPath",
     GETOPTIONS:                       "getOptions",
     GETTASKOPTIONS:                   "getTaskOptions",
     OPTIONS_COLUMNS:                  "--columns",
@@ -59,6 +51,17 @@ function _init_STRINGS() {
  *  @ignore
  */
 const _STRINGS = _init_STRINGS();
+
+/**
+ *  Returns the path to the check-outdated
+ *
+ *  @param  {grunt}   grunt
+ *  @return {string}  path to check-outdated
+ */
+function getCheckOutdatedPath( grunt ) {
+  try { return require.resolve( _STRINGS.PATH_CHECK_OUTDATED ); }
+  catch( error ) { /* istanbul ignore next */ grunt.fail.fatal( _STRINGS.ERROR_PEER_DEPENDENCY ); }
+}
 
 /**
  *  Returns default settings for basic check-outdated options.
@@ -176,7 +179,7 @@ function toArgs( grunt, task, options ) {
        *  check-outdated:  Set path to check-outdated
        */
       if ( ! options.checkoutdated.exec ) {
-           options.checkoutdated.exec = _m.lib.getCheckOutdatedPath();
+           options.checkoutdated.exec = getCheckOutdatedPath();
       }
       args.push( options.checkoutdated.exec );
 
@@ -242,11 +245,14 @@ function toArgs( grunt, task, options ) {
 
 /* eslint-disable */
 // Module exports:
+Object.defineProperty( module.exports, _STRINGS.GETCHKOUTDATEDIGNOREOPTIONS,  {
+       value:    getChkOutdatedIgnoreOptions,
+       writable: false, enumerable: true, configurable: false });
 Object.defineProperty( module.exports, _STRINGS.GETCHKOUTDATEDOPTIONS,  {
        value:    getChkOutdatedOptions,
        writable: false, enumerable: true, configurable: false });
-Object.defineProperty( module.exports, _STRINGS.GETCHKOUTDATEDIGNOREOPTIONS,  {
-       value:    getChkOutdatedIgnoreOptions,
+Object.defineProperty( module.exports, _STRINGS.GETCHECKOUTDATEDPATH,   {
+       value:    getCheckOutdatedPath,
        writable: false, enumerable: true, configurable: false });
 Object.defineProperty( module.exports, _STRINGS.GETOPTIONS,     {
        value:    getOptions,
