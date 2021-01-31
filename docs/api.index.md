@@ -4,12 +4,10 @@
 * [grunt-check-outdated](api.md/index.md#module_grunt-check-outdated)
     * [.registerMultiTaskChkOutdated(grunt)](api.md/index.md#module_grunt-check-outdated.registerMultiTaskChkOutdated)
 * [grunt-check-outdated/constants](api.md/constants.md#module_grunt-check-outdated/constants)
-* [grunt-check-outdated/lib](api.md/lib.md#module_grunt-check-outdated/lib)
-    * [~getCheckOutdatedPath(grunt)](api.md/lib.md#module_grunt-check-outdated/lib..getCheckOutdatedPath) ⇒ <code>string</code>
-    * [~isArray(grunt, options, name, callback)](api.md/lib.md#module_grunt-check-outdated/lib..isArray)
 * [grunt-check-outdated/options](api.md/options/index.md#module_grunt-check-outdated/options)
     * [.toArgs(grunt, task)](api.md/options/index.md#module_grunt-check-outdated/options.toArgs) ⇒ <code>Promise.&lt;Object&gt;</code> \| <code>Array.&lt;strings&gt;</code> \| <code>Array.&lt;any&gt;</code>
 * [grunt-check-outdated/options/checkoutdated](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated)
+    * [~getCheckOutdatedPath(grunt)](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated..getCheckOutdatedPath) ⇒ <code>string</code>
     * [~getChkOutdatedOptions()](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated..getChkOutdatedOptions) ⇒ <code>object</code>
     * [~getChkOutdatedIgnoreOptions()](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated..getChkOutdatedIgnoreOptions) ⇒ <code>object</code>
     * [~getOptions()](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated..getOptions) ⇒ <code>Object</code>

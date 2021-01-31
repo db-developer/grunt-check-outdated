@@ -28,6 +28,7 @@ function _init_STRINGS() {
     ERROR_MSG_MISSING_GRUNT:          `${ errormsg } 'grunt'.`,
     ERROR_MSG_MISSING_OPTIONS:        `${ errormsg } 'options'.`,
     ERROR_MSG_MISSING_TASK:           `${ errormsg } 'task'.`,
+    ERROR_PEER_DEPENDENCY:            "peer dependency missing. Please run: \"npm install check-outdated\"",
     FALSE:                            `${ false }`,
     GETCHKOUTDATEDIGNOREOPTIONS:      "getChkOutdatedIgnoreOptions",
     GETCHKOUTDATEDOPTIONS:            "getChkOutdatedOptions",
@@ -41,6 +42,7 @@ function _init_STRINGS() {
     OPTIONS_IGNORE_PACKAGES:          "--ignore-packages",
     OPTIONS_IGNORE_PRE_RELEASES:      "--ignore-pre-releases",
     OPTIONS_UI:                       "--ui",
+    PATH_CHECK_OUTDATED:              "check-outdated/check-outdated.js",
     TOARGS:                           `${ toargs }`,
     TRUE:                             `${ true }`
   };

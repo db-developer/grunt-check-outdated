@@ -6,11 +6,24 @@
 
 
 * [grunt-check-outdated/options/checkoutdated](#module_grunt-check-outdated/options/checkoutdated)
+    * [~getCheckOutdatedPath(grunt)](#module_grunt-check-outdated/options/checkoutdated..getCheckOutdatedPath) ⇒ <code>string</code>
     * [~getChkOutdatedOptions()](#module_grunt-check-outdated/options/checkoutdated..getChkOutdatedOptions) ⇒ <code>object</code>
     * [~getChkOutdatedIgnoreOptions()](#module_grunt-check-outdated/options/checkoutdated..getChkOutdatedIgnoreOptions) ⇒ <code>object</code>
     * [~getOptions()](#module_grunt-check-outdated/options/checkoutdated..getOptions) ⇒ <code>Object</code>
     * [~getTaskOptions(task)](#module_grunt-check-outdated/options/checkoutdated..getTaskOptions) ⇒ <code>Object</code>
     * [~toArgs(grunt, task)](#module_grunt-check-outdated/options/checkoutdated..toArgs) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
+
+
+<br><a name="module_grunt-check-outdated/options/checkoutdated..getCheckOutdatedPath"></a>
+
+### grunt-check-outdated/options/checkoutdated~getCheckOutdatedPath(grunt) ⇒ <code>string</code>
+> Returns the path to the check-outdated
+
+**Returns**: <code>string</code> - path to check-outdated  
+
+| Param | Type |
+| --- | --- |
+| grunt | <code>grunt</code> | 
 
 
 <br><a name="module_grunt-check-outdated/options/checkoutdated..getChkOutdatedOptions"></a>
