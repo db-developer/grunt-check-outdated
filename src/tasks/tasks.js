@@ -7,5 +7,5 @@
 const lib = require( "../lib" );
 
 module.exports = function( grunt ) {
-  lib.registerMultiTaskNYCMocha( grunt );
+  lib.registerMultiTaskChkOutdated( grunt );
 };
