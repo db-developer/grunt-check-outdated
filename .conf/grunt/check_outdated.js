@@ -7,7 +7,7 @@ module.exports = function ( grunt, options ) {
   return {
     target1: {
       options: {
-        // cwd:           process.cwd(),      // working directory for nyc + mocha run
+        // cwd:           process.cwd(),      // working directory
         // dryrun:        false,              // dry run - do nothing just print cmd line
         // quiet          false,
         /* node: {
