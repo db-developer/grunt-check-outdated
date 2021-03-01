@@ -44,7 +44,7 @@
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-eslint": "^23.0.0",
-    "grunt-jsdoc2md": "0.0.6",
+    "grunt-jsdoc2md": "^0.0.7",
     "grunt-jsonfile": "^0.2.7",
     "grunt-mkdir": "^1.1.0",
     "grunt-move": "^1.0.3",
@@ -59,6 +59,6 @@
     "webpack": "^4.45.0"
   },
   "dependencies": {
-    "check-outdated": "^2.5.0"
+    "check-outdated": "^2.5.1"
   }
 }
