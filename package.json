@@ -59,6 +59,6 @@
     "webpack": "^4.45.0"
   },
   "dependencies": {
-    "check-outdated": "^2.5.1"
+    "check-outdated": "^2.6.0"
   }
 }
