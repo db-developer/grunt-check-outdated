@@ -345,6 +345,20 @@ const path      = require( "path" );
                               .catch(( error ) => { done( error ); })
                        }).not.to.throwException();
       });
+      it( "should be callable with parameters 'grunt' {grunt}, 'task' {task}, 'options' {object} and resolve (options.checkoutdated.preferwanted = true)", ( done ) => {
+          const options = chkoutdt.getTaskOptions( env.task );
+                options.checkoutdated.preferwanted = true;
+          expect(() => { chkoutdt.toArgs( env.grunt, env.task, options )
+                              .then(( value ) => {
+                                      // console.log( value );
+                                      expect( value ).to.be.an( "object" );
+                                      expect( value.opts.checkoutdated.preferwanted === true ).to.be.ok();
+                                      expect( value.args.includes( "--prefer-wanted" )).to.be.ok();
+                                      done();
+                               })
+                              .catch(( error ) => { done( error ); })
+                       }).not.to.throwException();
+      });
       it( "should be callable with parameters 'grunt' {grunt}, 'task' {task}, 'options' {object} and resolve (options.checkoutdated.opts = [ '---option' ])", ( done ) => {
           const arg     = "--option";
           const arr     = [ arg ];
