@@ -41,7 +41,7 @@ function _init_STRINGS() {
     OPTIONS_IGNORE_DEV_DEPENDENCIES:  "--ignore-dev-dependencies",
     OPTIONS_IGNORE_PACKAGES:          "--ignore-packages",
     OPTIONS_IGNORE_PRE_RELEASES:      "--ignore-pre-releases",
-    OPTIONS_UI:                       "--ui",
+    OPTIONS_PREFERWANTED:             "--prefer-wanted",
     PATH_CHECK_OUTDATED:              "check-outdated/check-outdated.js",
     TOARGS:                           `${ toargs }`,
     TRUE:                             `${ true }`
@@ -72,14 +72,15 @@ function getCheckOutdatedPath( grunt ) {
  */
 function getChkOutdatedOptions() {
   return {
-    columns:    [
-                  _STRINGS.COLUMN_NAME,
-                  _STRINGS.COLUMN_CURRENT,
-                  _STRINGS.COLUMN_WANTED,
-                  _STRINGS.COLUMN_LATEST
-                ],
-    depth:      false,
-    global:     false
+    columns:      [
+                    _STRINGS.COLUMN_NAME,
+                    _STRINGS.COLUMN_CURRENT,
+                    _STRINGS.COLUMN_WANTED,
+                    _STRINGS.COLUMN_LATEST
+                  ],
+    depth:        false,
+    global:       false,
+    preferwanted: false
   };
 }
 
@@ -225,6 +226,14 @@ function toArgs( grunt, task, options ) {
        */
       if ( options.checkoutdated.global === true ) {
            args.push( _STRINGS.OPTIONS_GLOBAL );
+      }
+
+
+      /*
+       *  check-outdated:  preferwanted
+       */
+      if ( options.checkoutdated.preferwanted === true ) {
+           args.push( _STRINGS.OPTIONS_PREFERWANTED );
       }
 
       /*
