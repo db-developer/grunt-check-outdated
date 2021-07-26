@@ -1,6 +1,6 @@
 {
   "name": "grunt-check-outdated",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "check for outdated dependencies",
   "author": "Dirk Brenckmann <db.developer@gmx.de>",
   "license": "MIT",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/db-developer/grunt-check-outdated/issues"
   },
-  "homepage": "https://github.com/db-developer/grunt-check-outdated#readme",
+  "homepage": "https://www.slashlib.org/?page_id=429",
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@rollup/plugin-commonjs": "^19.0.1",
