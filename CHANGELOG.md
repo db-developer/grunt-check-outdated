@@ -12,6 +12,14 @@ All notable changes to this project will be documented in this file.
 
 - No Fixes yet
 
+## [1.0.0] - 2021-07-26
+
+Update to "stable" major version without breaking changes.
+
+### Changed
+- README.md changed link to CHANGELOG.md
+- moved changelog from docs/ to projects rootdir
+
 ## [0.0.4] - 2021-07-26
 
 ### Added
