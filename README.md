@@ -26,7 +26,7 @@ This plugin is a grunt wrapper for [check-outdated](https://www.npmjs.com/packag
   * [Frameworks used for testing, building, etc.](docs/frameworks.md)
   * [API of package grunt-check-outdated](docs/api.index.md)
 
-[Changelog](docs/changelog.md)
+[Changelog](CHANGELOG.md)
 
 ## getting started ##
 
