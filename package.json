@@ -1,6 +1,6 @@
 {
   "name": "grunt-check-outdated",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "check for outdated dependencies",
   "author": "Dirk Brenckmann <db.developer@gmx.de>",
   "license": "MIT",
