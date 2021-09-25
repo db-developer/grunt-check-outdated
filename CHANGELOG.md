@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file.
 
 - No Fixes yet
 
+## [1.0.1] - 2021-09-25
+
+Updated dependencies (versions) in package.json
+
 ## [1.0.0] - 2021-07-26
 
 Update to "stable" major version without breaking changes.
