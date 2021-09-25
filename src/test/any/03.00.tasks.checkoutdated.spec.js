@@ -154,12 +154,13 @@ const expect    = require( "expect.js"   );
       }).timeout( 8000 );
     });
     describe( "Testing function 'registerMultiTaskChkOutdated' of module 'checkoutdated'", () => {
-      const errmsg  = "Cannot read property 'registerMultiTask' of undefined";
+      const errmsg      = "Cannot read property 'registerMultiTask' of undefined";
+      const errmsg_v_16 = "Cannot read properties of undefined (reading 'registerMultiTask')"
       it( "should not be callable without parameters", () => {
           expect(() => { tasks.registerMultiTaskChkOutdated(); }).to.throwException(( error ) => {
             // console.log( error );
             expect( error ).to.be.an( Error );
-            expect( error.message === errmsg ).to.be.ok();
+            expect(( error.message === errmsg ) || ( error.message === errmsg_v_16 )).to.be.ok();
           });
       });
       it( "should be callable with parameter 'grunt' {grunt}", () => {
