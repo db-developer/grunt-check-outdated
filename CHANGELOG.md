@@ -12,6 +12,11 @@ All notable changes to this project will be documented in this file.
 
 - No Fixes yet
 
+## [1.1.0] - 2022-02-09
+
+Updated dependencies (versions) in package.json
+Dropped support for nodejs versions prior 12 see: https://nodejs.org/en/about/releases/
+
 ## [1.0.1] - 2021-09-25
 
 Updated dependencies (versions) in package.json
