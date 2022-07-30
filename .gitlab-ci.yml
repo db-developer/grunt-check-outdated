@@ -57,7 +57,7 @@ cleanup:
     - rm -rf node_modules/
     # make it available again so "nothing" can/will be cached
     # if directory node_modules does not exist, cache will be
-    # considered as "uptodate" and remeains messy (no upload).
+    # considered as "uptodate" and remains messy (no upload).
     - mkdir node_modules
 
   when: always
