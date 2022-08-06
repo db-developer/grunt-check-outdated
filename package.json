@@ -9,17 +9,16 @@
     "node": ">=14"
   },
   "main": "tasks/tasks.js",
-  "scripts": {
-    "all": "grunt all",
-    "build": "grunt build",
-    "dependencies": "grunt dependencies",
-    "coverage": "grunt coverage",
-    "docs": "grunt docs",
-    "test": "grunt test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/db-developer/grunt-check-outdated.git"
+  },
+  "scripts": {
+    "all":  "grunt all",
+    "build": "grunt build",
+    "coverage": "grunt coverage",
+    "docs": "grunt docs",
+    "test": "grunt test"
   },
   "keywords": [
     "grunt",
