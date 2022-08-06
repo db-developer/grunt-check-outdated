@@ -8,7 +8,7 @@ check for outdated dependencies
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](https://gruntjs.com/)
 [![codecov](https://codecov.io/gh/db-developer/grunt-check-outdated/branch/master/graph/badge.svg)](https://codecov.io/gh/db-developer/grunt-check-outdated)
 [![Build Status](https://travis-ci.com/db-developer/grunt-check-outdated.svg?branch=master)](https://travis-ci.com/db-developer/grunt-check-outdated)
-[![dependencies](https://david-dm.org/db-developer/grunt-check-outdated.svg)](https://david-dm.org/)
+[![dependencies](https://img.shields.io/librariesio/release/npm/grunt-check-outdated)](https://libraries.io/)
 
 This plugin is a grunt wrapper for [check-outdated](https://www.npmjs.com/package/check-outdated)
 
