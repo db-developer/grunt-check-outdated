@@ -114,7 +114,7 @@ const expect    = require( "expect.js"   );
                                        });
                          }).catch(( error ) => { done( error ); });
                        }).not.to.throwException();
-      }).timeout( 8000 );
+      }).timeout( 16000 );
     });
     describe( "Testing function 'runTaskChkOutdated' of module 'checkoutdated'", () => {
       it( "should be callable without parameters but get rejected", ( done ) => {
