@@ -9,7 +9,7 @@
  *  checkoutdated.js  is distributed WITHOUT ANY WARRANTY; without even the
  *  implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- *//* eslint-disable-next-line */
+ */
 "use strict";
 
 /**
@@ -61,6 +61,7 @@ const _STRINGS = _init_STRINGS();
  *  @return {string}  path to check-outdated
  */
 function getCheckOutdatedPath( grunt ) {
+  /* eslint-disable no-unused-vars */
   try { return require.resolve( _STRINGS.PATH_CHECK_OUTDATED ); }
   catch( error ) { /* istanbul ignore next */ grunt.fail.fatal( _STRINGS.ERROR_PEER_DEPENDENCY ); }
 }
@@ -254,24 +255,22 @@ function toArgs( grunt, task, options ) {
   });
 }
 
-/* eslint-disable */
 // Module exports:
 Object.defineProperty( module.exports, _STRINGS.GETCHKOUTDATEDIGNOREOPTIONS,  {
-       value:    getChkOutdatedIgnoreOptions,
-       writable: false, enumerable: true, configurable: false });
+  value:    getChkOutdatedIgnoreOptions,
+  writable: false, enumerable: true, configurable: false });
 Object.defineProperty( module.exports, _STRINGS.GETCHKOUTDATEDOPTIONS,  {
-       value:    getChkOutdatedOptions,
-       writable: false, enumerable: true, configurable: false });
+  value:    getChkOutdatedOptions,
+  writable: false, enumerable: true, configurable: false });
 Object.defineProperty( module.exports, _STRINGS.GETCHECKOUTDATEDPATH,   {
-       value:    getCheckOutdatedPath,
-       writable: false, enumerable: true, configurable: false });
+  value:    getCheckOutdatedPath,
+  writable: false, enumerable: true, configurable: false });
 Object.defineProperty( module.exports, _STRINGS.GETOPTIONS,     {
-       value:    getOptions,
-       writable: false, enumerable: true, configurable: false });
+  value:    getOptions,
+  writable: false, enumerable: true, configurable: false });
 Object.defineProperty( module.exports, _STRINGS.GETTASKOPTIONS, {
-       value:    getTaskOptions,
-       writable: false, enumerable: true, configurable: false });
+  value:    getTaskOptions,
+  writable: false, enumerable: true, configurable: false });
 Object.defineProperty( module.exports, _STRINGS.TOARGS,         {
-       value:    toArgs,
-       writable: false, enumerable: true, configurable: false });
-/* eslint-enable */
+  value:    toArgs,
+  writable: false, enumerable: true, configurable: false });

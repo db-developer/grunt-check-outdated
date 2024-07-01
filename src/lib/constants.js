@@ -23,12 +23,10 @@ const _STRINGS = {
   TASKDESCRIPTION_CHKOUTDATED:     "Check package.json for outdated dependencies"
 };
 
-/* eslint-disable */
 // Module exports:
 Object.defineProperty( module.exports, _STRINGS.PROPERTY_TASKNAME_CHKOUTDATED, {
-       value:    _STRINGS.TASKNAME_CHKOUTDATED,
-       writable: false, enumerable: true, configurable: false });
+  value:    _STRINGS.TASKNAME_CHKOUTDATED,
+  writable: false, enumerable: true, configurable: false });
 Object.defineProperty( module.exports, _STRINGS.PROPERTY_TASKDESC_CHKOUTDATED, {
-       value:    _STRINGS.TASKDESCRIPTION_CHKOUTDATED,
-       writable: false, enumerable: true, configurable: false });
-/* eslint-enable */
+  value:    _STRINGS.TASKDESCRIPTION_CHKOUTDATED,
+  writable: false, enumerable: true, configurable: false });
