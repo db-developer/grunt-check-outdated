@@ -6,7 +6,7 @@
   "license": "MIT",
   "engineStrict": true,
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "main": "tasks/tasks.js",
   "repository": {
