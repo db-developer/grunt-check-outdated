@@ -2,17 +2,16 @@
 <br><a name="module_grunt-check-outdated/tasks"></a>
 
 ## grunt-check-outdated/tasks
-> index.js: grunt-check-outdated/tasks
+> tasks/index.js: grunt-check-outdated/tasks
 
 
-<br><a name="module_grunt-check-outdated/tasks.registerMultiTaskChkOutdated"></a>
+<br><a name="module_grunt-check-outdated/tasks.registerMultiTask"></a>
 
-### grunt-check-outdated/tasks.registerMultiTaskChkOutdated(grunt)
-> Register a multitask for check_outdated.
+### grunt-check-outdated/tasks.registerMultiTask(grunt)
+> Registers the `call_rollup` multitask with Grunt.> >  This function is the main entry point to integrate `grunt-call-rollup`>  into a Gruntfile. Internally, it forwards to>  [chkoutdated.registerMultiTask](./chkoutdated.md#.registerMultiTask).
 
-**See**: Function [registerMultiTaskChkOutdated](chkoutdated.md#.registerMultiTaskChkOutdated)         published by module chkoutdated for a detailed function description.  
 
-| Param | Type |
-| --- | --- |
-| grunt | <code>grunt</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| grunt | <code>grunt</code> | The Grunt runtime instance. |
 

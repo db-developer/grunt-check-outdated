@@ -6,14 +6,14 @@
 
 
 * [grunt-check-outdated/tasks/checkoutdated](#module_grunt-check-outdated/tasks/checkoutdated)
-    * [~executeChkOutdated(grunt, task, obj)](#module_grunt-check-outdated/tasks/checkoutdated..executeChkOutdated)
-    * [~runTaskChkOutdated()](#module_grunt-check-outdated/tasks/checkoutdated..runTaskChkOutdated) ⇒ <code>Promise</code>
-    * [~registerMultiTaskChkOutdated(grunt)](#module_grunt-check-outdated/tasks/checkoutdated..registerMultiTaskChkOutdated)
+    * [.execute(grunt, task, obj)](#module_grunt-check-outdated/tasks/checkoutdated.execute)
+    * [.runTask()](#module_grunt-check-outdated/tasks/checkoutdated.runTask) ⇒ <code>Promise</code>
+    * [.registerMultiTask(grunt)](#module_grunt-check-outdated/tasks/checkoutdated.registerMultiTask)
 
 
-<br><a name="module_grunt-check-outdated/tasks/checkoutdated..executeChkOutdated"></a>
+<br><a name="module_grunt-check-outdated/tasks/checkoutdated.execute"></a>
 
-### grunt-check-outdated/tasks/checkoutdated~executeChkOutdated(grunt, task, obj)
+### grunt-check-outdated/tasks/checkoutdated.execute(grunt, task, obj)
 > Return a promise for executing>    'node --[node opts] check-outdated --[opts]'
 
 
@@ -24,16 +24,16 @@
 | obj | <code>Object</code> | wrapper for options and arguments. |
 
 
-<br><a name="module_grunt-check-outdated/tasks/checkoutdated..runTaskChkOutdated"></a>
+<br><a name="module_grunt-check-outdated/tasks/checkoutdated.runTask"></a>
 
-### grunt-check-outdated/tasks/checkoutdated~runTaskChkOutdated() ⇒ <code>Promise</code>
+### grunt-check-outdated/tasks/checkoutdated.runTask() ⇒ <code>Promise</code>
 > Run the check-outdated task.
 
 **Returns**: <code>Promise</code> - ... required by callee to terminate async call (on "then")  
 
-<br><a name="module_grunt-check-outdated/tasks/checkoutdated..registerMultiTaskChkOutdated"></a>
+<br><a name="module_grunt-check-outdated/tasks/checkoutdated.registerMultiTask"></a>
 
-### grunt-check-outdated/tasks/checkoutdated~registerMultiTaskChkOutdated(grunt)
+### grunt-check-outdated/tasks/checkoutdated.registerMultiTask(grunt)
 > Registers the 'check_outdated' multitask.
 
 

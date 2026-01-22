@@ -5,40 +5,26 @@
  *  @module grunt-check-outdated
  *
  *//*
- *  © 2021, slashlib.org.
+ *  © 2021, db-developer.
  *
- *  index.js  is distributed WITHOUT ANY WARRANTY; without even the implied
- *  warranty  of  MERCHANTABILITY  or  FITNESS  FOR  A PARTICULAR  PURPOSE.
- *
+ *  Distributed  WITHOUT  ANY WARRANTY;  without  even the  implied
+ *  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 "use strict";
 
-/**
- *  Moduletable
- *  @ignore
- */
-const _m = {
-  tasks:    require( "./tasks" )
-}
+const tasks = require( "./tasks" );
 
-/**
- *  Stringtable
- *  @ignore
- */
-const _STRINGS = {
-  REGISTERMULTITASKCHKOUTDATED:  "registerMultiTaskChkOutdated"
-}
-
-// Module exports:
 /**
  *  Register a multitask for check_outdated.
+ * 
+ *  This function forwards to `tasks.registerMultiTask()` and is the main
+ *  entry point for integrating the plugin into a Gruntfile.
  *
- *  @see    Function [registerMultiTaskChkOutdated]{@link tasks/index.md#.registerMultiTaskChkOutdated}
- *          published by module tasks for a detailed function description.
+ *  This is a re-export of function 
+ *  [registerMultiTask]{@link tasks/index.md#.registerMultiTask}
+ *  published by module [tasks]{@link tasks/index.md}
  *
- *  @function module:grunt-check-outdated.registerMultiTaskChkOutdated
- *  @param  {grunt} grunt
+ *  @function module:grunt-check-outdated.registerMultiTask
+ *  @param  {grunt} grunt - The Grunt runtime instance.
  */
-Object.defineProperty( module.exports, _STRINGS.REGISTERMULTITASKCHKOUTDATED, {
-  value:    _m.tasks.registerMultiTaskChkOutdated,
-  writable: false, enumerable: true, configurable: false });
+module.exports.registerMultiTask = tasks.registerMultiTask;

@@ -3,6 +3,7 @@
  *  Licensed under the MIT license.
  */
 
+// THIS IS A TEST CONFIGURATION. DO NOT CHANGE.
 module.exports = function ( grunt, options ) {
   return {
     target1: {

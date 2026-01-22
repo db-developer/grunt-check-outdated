@@ -1,40 +1,25 @@
 
 /**
- *	index.js: grunt-check-outdated/options
+ *	lib/options/index.js: grunt-check-outdated/options
  *
  *  @module grunt-check-outdated/options
  *
  *//*
- *  © 2021, slashlib.org.
+ *  © 2021, db-developer.
  *
- *  index.js  is distributed WITHOUT ANY WARRANTY; without even the implied
- *  warranty  of  MERCHANTABILITY  or  FITNESS  FOR  A PARTICULAR  PURPOSE.
- *
+ *  Distributed  WITHOUT  ANY WARRANTY;  without  even the  implied
+ *  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 "use strict";
 
-/**
- *  Module initializer
- *  @ignore
- */
-const _m = {
-  checkoutdated:      require( "./checkoutdated" )
-};
+const checkoutdated = require( "./checkoutdated" );
 
 /**
- *  Stringtable
- *  @ignore
- */
-const _STRINGS = {
-  TOCHKOUTDATEDARGS:  "toChkOutdatedArgs"
-};
-
-// Module exports:
-/**
- *  Register a multitask for check_outdated.
+ *  Converts task-specific options for the `check_outdated` task into
+ *  a plain options object used for executing Rollup.
  *
- *  @see    Function [toArgs]{@link chkoutdated.md#.toArgs}
- *          published by module chkoutdated for a detailed function description.
+ *  This is a re-export of function [toArgs]{@link chkoutdated.md#.toArgs}
+ *  published by module [options/chkoutdated]{@link chkoutdated.md}
  *
  *  @function module:grunt-check-outdated/options.toArgs
  *  @param  {grunt}           grunt
@@ -44,6 +29,4 @@ const _STRINGS = {
  *  @return {Array<strings>}  obj.args  an array of arguments
  *  @return {Array<any>}      obj.opts  an array of options
  */
-Object.defineProperty( module.exports, _STRINGS.TOCHKOUTDATEDARGS, {
-  value:    _m.checkoutdated.toArgs,
-  writable: false, enumerable: true, configurable: false });
+module.exports.toArgs = checkoutdated.toArgs;

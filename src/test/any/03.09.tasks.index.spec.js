@@ -11,15 +11,10 @@ const expect    = require( "expect.js"   );
     const tasks   = require( "../../lib/tasks" );
 
     describe( "Testing exports of module 'tasks'", () => {
-      it( "Function 'registerMultiTaskChkOutdated' should exist", () => {
-          expect( tasks.registerMultiTaskChkOutdated ).not.to.be( undefined  );
-          expect( tasks.registerMultiTaskChkOutdated ).not.to.be( null       );
-          expect( tasks.registerMultiTaskChkOutdated ).to.be.a(   "function" );
-      });
-      it( "Function 'runTaskChkOutdated' should exist", () => {
-          expect( tasks.runTaskChkOutdated           ).not.to.be( undefined  );
-          expect( tasks.runTaskChkOutdated           ).not.to.be( null       );
-          expect( tasks.runTaskChkOutdated           ).to.be.a(   "function" );
+      it( "Function 'registerMultiTask' should exist", () => {
+          expect( tasks.registerMultiTask ).not.to.be( undefined  );
+          expect( tasks.registerMultiTask ).not.to.be( null       );
+          expect( tasks.registerMultiTask ).to.be.a(   "function" );
       });
     });
   });

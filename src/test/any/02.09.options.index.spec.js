@@ -11,10 +11,10 @@ const expect = require( "expect.js" );
     const options = require( "../../lib/options" );
 
     describe( "Testing exports of module 'options'", () => {
-      it( "Function 'toChkOutdatedArgs' should exist", () => {
-          expect( options.toChkOutdatedArgs ).not.to.be( undefined  );
-          expect( options.toChkOutdatedArgs ).not.to.be( null       );
-          expect( options.toChkOutdatedArgs ).to.be.a(   "function" );
+      it( "Function 'toArgs' should exist", () => {
+          expect( options.toArgs ).not.to.be( undefined  );
+          expect( options.toArgs ).not.to.be( null       );
+          expect( options.toArgs ).to.be.a(   "function" );
       });
     });
   });

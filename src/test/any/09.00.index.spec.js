@@ -11,10 +11,10 @@ const expect    = require( "expect.js"   );
     const idx     = require( "../../lib/index" );
 
     describe( "Testing exports of module 'index'", () => {
-      it( "Function 'registerMultiTaskChkOutdated' should exist", () => {
-          expect( idx.registerMultiTaskChkOutdated ).not.to.be( undefined  );
-          expect( idx.registerMultiTaskChkOutdated ).not.to.be( null       );
-          expect( idx.registerMultiTaskChkOutdated ).to.be.a(   "function" );
+      it( "Function 'registerMultiTask' should exist", () => {
+          expect( idx.registerMultiTask ).not.to.be( undefined  );
+          expect( idx.registerMultiTask ).not.to.be( null       );
+          expect( idx.registerMultiTask ).to.be.a(   "function" );
       });
     });
   });
