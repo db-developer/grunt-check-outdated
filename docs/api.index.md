@@ -2,6 +2,7 @@
 ## Modules
 
 * [grunt-check-outdated](api.md/index.md#module_grunt-check-outdated)
+    * [.registerMultiTask(grunt)](api.md/index.md#module_grunt-check-outdated.registerMultiTask)
 * [grunt-check-outdated/constants](api.md/constants.md#module_grunt-check-outdated/constants)
     * [.TASKNAME](api.md/constants.md#module_grunt-check-outdated/constants.TASKNAME) : <code>string</code>
     * [.TASKDESCRIPTION](api.md/constants.md#module_grunt-check-outdated/constants.TASKDESCRIPTION) : <code>string</code>
@@ -13,10 +14,11 @@
     * [.getChkOutdatedIgnoreOptions()](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated.getChkOutdatedIgnoreOptions) ⇒ <code>object</code>
     * [.getOptions()](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated.getOptions) ⇒ <code>Object</code>
     * [.getTaskOptions(task)](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated.getTaskOptions) ⇒ <code>Object</code>
-    * [.toArgs(grunt, task)](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated.toArgs) ⇒ <code>Promise.&lt;Array.&lt;Object&gt;&gt;</code>
+    * [.toArgs(grunt, task, [options])](api.md/options/checkoutdated.md#module_grunt-check-outdated/options/checkoutdated.toArgs) ⇒ <code>Promise.&lt;Object&gt;</code>
 * [grunt-check-outdated/tasks](api.md/tasks/index.md#module_grunt-check-outdated/tasks)
     * [.registerMultiTask(grunt)](api.md/tasks/index.md#module_grunt-check-outdated/tasks.registerMultiTask)
 * [grunt-check-outdated/tasks/checkoutdated](api.md/tasks/checkoutdated.md#module_grunt-check-outdated/tasks/checkoutdated)
+    * [.spawnAsync(grunt, config)](api.md/tasks/checkoutdated.md#module_grunt-check-outdated/tasks/checkoutdated.spawnAsync) ⇒ <code>Promise.&lt;Object&gt;</code>
     * [.execute(grunt, task, obj)](api.md/tasks/checkoutdated.md#module_grunt-check-outdated/tasks/checkoutdated.execute)
     * [.runTask()](api.md/tasks/checkoutdated.md#module_grunt-check-outdated/tasks/checkoutdated.runTask) ⇒ <code>Promise</code>
     * [.registerMultiTask(grunt)](api.md/tasks/checkoutdated.md#module_grunt-check-outdated/tasks/checkoutdated.registerMultiTask)
