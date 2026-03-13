@@ -1,7 +1,7 @@
 /**
- * lib/constants.js: grunt-check-outdated
+ *  lib/constants.js: grunt-check-outdated
  *
- * @module grunt-check-outdated/constants
+ *  @module grunt-check-outdated/constants
  *
  *//*
  *  © 2021, db-developer.
