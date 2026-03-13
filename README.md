@@ -1,7 +1,3 @@
-# grunt-check-outdated
-
-check for outdated dependencies  
-
 [![npm version](https://img.shields.io/npm/v/grunt-check-outdated?color=blue)](https://www.npmjs.com/package/grunt-check-outdated)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![jsdoc](https://img.shields.io/static/v1?label=jsdoc&message=%20api%20&color=blue)](https://jsdoc.app/)
@@ -10,6 +6,11 @@ check for outdated dependencies
 ![Build & Test](https://github.com/db-developer/grunt-check-outdated/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/db-developer/grunt-check-outdated/branch/master/graph/badge.svg)](https://codecov.io/gh/db-developer/grunt-check-outdated)
 
+[BOTTOM](#usage) [AI](AI.md) [CHANGELOG](CHANGELOG.md) [LICENSE](LICENSE)
+
+# grunt-check-outdated
+
+check for outdated dependencies  
 This plugin is a grunt wrapper for [check-outdated](https://www.npmjs.com/package/check-outdated)
 
 ## content ##
@@ -96,3 +97,5 @@ module.exports = function ( grunt, options ) {
   };
 };
 ```
+
+[TOP](#grunt-check-outdated) [AI](AI.md) [CHANGELOG](CHANGELOG.md) [LICENSE](LICENSE)

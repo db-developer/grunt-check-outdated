@@ -1,3 +1,5 @@
+[BOTTOM](#004---2021-07-26) [AI](AI.md) [LICENSE](LICENSE) [README](README.md)
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -11,6 +13,14 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - No Fixes yet
+
+## [1.3.1] - 2026-03-03
+
+- Fixed a minor bug in the `toArgs` function where optional task options were not being cloned correctly.
+- Updated README.md
+- Added AI.md to document the use of AI in the development of this project.
+- Added links to AI.md, CHANGELOG.md and LICENSE.md for better navigation and documentation.
+- Updated package.json to reflect the latest version and dependencies.
 
 ## [1.3.0] - 2026-01-22
 
@@ -62,3 +72,5 @@ Update to "stable" major version without breaking changes.
 ### Changed
 - README.md set link to docs/changelog.md
 - package.json set to https://www.slashlib.org/?page_id=429
+
+[TOP](#changelog) [AI](AI.md) [LICENSE](LICENSE) [README](README.md)
