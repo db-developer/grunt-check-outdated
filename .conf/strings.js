@@ -8,7 +8,6 @@ module.exports = {
   ANY:      "any",
   API:      "api",
   BUILD:    "build",
-  BUILDWP:  "webpack_build",
   BUILDRO:  "rollup_build",
   CALL_NPM: "call_npm",
   CLEAN:    "clean",
@@ -33,6 +32,5 @@ module.exports = {
   TASKS:    "tasks",
   TEMPLATE: "template",
   TEST:     "test",
-  TMP:      "tmp",
-  WEBPACK:  "webpack"
+  TMP:      "tmp"
 }
