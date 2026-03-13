@@ -39,8 +39,6 @@ module.exports = function( grunt ) {
                                          strings.MKDIR,    `${ strings.COPY  }:build`,
                                          strings.JSONFILE,  strings.BUILDRO ]);
 
-  grunt.registerTask( strings.BUILDWP, [ strings.WEBPACK ]);
-
   grunt.registerTask( strings.BUILDRO, [ strings.ROLLUP  ]);
 
   // run coverage (required by travis)
